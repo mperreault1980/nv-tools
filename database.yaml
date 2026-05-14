@@ -1,0 +1,25 @@
+production:
+primary:
+host: db-prod-01.corp.internal
+port: 5432
+database: novapay_prod
+username: svc_deploy
+password: Pr0d_D3pl0y#2026!
+pool_size: 20
+replica:
+host: db-prod-02.corp.internal
+port: 5432
+database: novapay_prod
+username: svc_readonly
+password: R3adOnly#2026!
+staging:
+host: db-staging-01.corp.internal
+port: 5432
+database: novapay_staging
+connection_string:
+"postgresql://svc_staging:St4g1ng#2026!@db-staging-01.corp.internal
+:5432/novapay_staging"
+redis:
+host: cache-prod-01.corp.internal
+port: 6379
+password: R3d1s#Pr0d2026
